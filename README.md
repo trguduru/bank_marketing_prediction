@@ -44,3 +44,74 @@ Customers at age 30-50 are accepting lot of offers with various educational leve
 
 This plot shows the married people are not accepting a lot of offers than single person.
 
+Here are some additional plots about multivariate analysis
+![](images/by_housing.png) ![](images/by_marital.png).
+
+
+## Data Processing
+There are many categorical features in this dataset like job,marital,education,default,housing,loan,contact and month etc...
+
+Used **OrdinalEncoding** for ordinal features like month, day etc ... and **LabelEncoder** for others.
+
+![](images/pair_plot.png)
+
+Here is the pair plot after encoding the dataset.
+
+As per the ask, selected only the first 7 features to see the feature importance of these features.
+
+![](images/feature_importance.png)
+
+This plot shows that **age** is the biggest contributor to the outcome of the results than other features.
+
+## Model Building
+
+After using the **StandardScaler** the below plot show the dataset balance between train and test splits of target class.
+
+![](images/train_test_balance.png)
+
+
+It shows that there is a imbalance in the train and test splits. We can use sklearn **resample** or **stratify** techniques to balance target  classes.
+
+### Base Models
+
+Trained the following models and compared the performance
+* Logistic Regression
+* KNN
+* Decision Tree Classifier
+* SVC
+* LinearSVC
+* SGDClassifier
+* Guassian
+
+
+The below plot shows the performance
+
+![](images/base_model_perf.png)
+
+It shows that DecisionTreeClassifier train score is higher than all models but its test score is very less. The better models are LinearRegression,SVC and LinearSVC.
+
+Here is the train time of these models
+
+![](images/base_model_train_time.png)
+
+In this the SVC is taking longer time to train the model than other models.
+
+
+### Fine Tuned Models
+
+Used **GridSearchCV** for tuning hyper parameters of the following models.
+* LogisticRegression
+* KNN
+* DecisionTreeClassifier
+* LinearSVC
+* SGDClassifier
+
+Here is the performance plot
+
+![](images/model_perf_tune.png)
+
+It shows the LogisticRegression,LinearSVC and SGDClassfier are showing higher score than others.
+
+### Accuracy Score
+
+
