@@ -116,7 +116,7 @@ Here is the performance plot
 
 It shows the LogisticRegression,LinearSVC and SGDClassfier are showing higher score than others.
 
-### Accuracy Score
+### Model Accuracy
 
 Here are the plots of confusion matrix of various models.
 
@@ -126,3 +126,11 @@ All these confusion matrix of various models predicts correctly the customers wi
 
 
 ## Conclusion
+
+Here are few interesting observations during the training of these classification models.
+
+* **Data Imbalance** :
+The dataset is imbalance in terms of target classes. So we improve the dataset to eliminate these imbalances it will improve model performance.
+* **Model Prediction**: All classification models are accurately predicting in terms of offers not accepted but not when customers accepted offers. So due to data imbalance the models predicts wrong for these population
+* **Additional Techniques**: Maybe use additional techniques like *ensemble* and/or dataset oversampling will help improve the model
+* **Additional Classification Models**: Use ensemble classification models like BaggingDecisionTree,RandomForest etc ... might improve the model performance with hyper parameter tuning.
