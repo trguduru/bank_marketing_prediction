@@ -7,6 +7,17 @@ The bankers need to know whether the campaigns they are running are effective or
 
 Here is the [jupyter notebook](prompt_III.ipynb) that contains all the data analysis, model building and interesting findings.
 
+## Project Organization
+
+The project contains the following files and directories.
+* **data** folder contains the dataset
+* **images** folder plots of various data and model analysis
+* a vscode workspace file
+* CRISP DM of bank dataset pdf document
+* Jupyter Notebook file
+* README file
+
+
 ## Dataset
 The dataset with various features contains over 400K records which we will use to build a model.
 
