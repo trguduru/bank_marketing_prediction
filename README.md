@@ -12,3 +12,16 @@ This dataset has 400K records and 21 features. And this dataset doesnt have any 
 It has 12 duplicated records and removed those as they may not add value. Here is the plot of duplicates.
 ![](images/duplicates.png)
 
+## Data Analysis
+Here are some of the plots shows the data analysis of the dataset.
+### Multivariate Analysis
+Here are some plots shows the multivariate analysis of various features.
+![](images/accepted_education.png)
+This plot shows the how many customers accepted offers with  whats their educational qualifications. People with university  degree are accepting lot of  offers.
+
+![](images/accepted_education_age.png)
+This plot shows the customers who accepted at what age and whats their education.
+Customers at age 30-50 are accepting lot of offers with various educational levels.
+
+![](images/accepted_job.png)
+Plot shows the customers who accepted and whats their job status is. The customers with blue collar jobs are accpeting lot of offers.
