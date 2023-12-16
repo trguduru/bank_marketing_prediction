@@ -1,7 +1,11 @@
-# bank_marketing_prediction
+# Marketing Campaing Prediction of Bank Offers.
 An ML model which predicts whether the customer accepts the product or not
 ## Introduction
 The bankers need to know whether the campaigns they are running are effective or not and also predict how future campaigns are going to be.
+
+## Notebook
+
+Here is the [jupyter notebook](prompt_III.ipynb) that contains all the data anlysis, model building and intersting findings.
 
 ## Dataset
 The dataset with various features contains over 400K records which we will use to build a model.
@@ -114,4 +118,11 @@ It shows the LogisticRegression,LinearSVC and SGDClassfier are showing higher sc
 
 ### Accuracy Score
 
+Here are the plots of confusion matrix of various models.
 
+![](images/lr_c_matrix.png) ![](images/knn_c_matrix.png) ![](images/dtree_c_matrix.png)
+
+All these confusion matrix of various models predicts correctly the customers with offers not accepted but wrong predictions on who accepted the offers which means these models are overfit on training data only.
+
+
+## Conclusion
