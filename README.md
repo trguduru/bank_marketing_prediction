@@ -63,14 +63,18 @@ Here are some additional plots about multivariate analysis.
 ![](images/by_housing.png) ![](images/by_marital.png).
 
 
+Here are a few plots showing the correlation between each feature in the dataset.
+
+![](images/pair_plot.png)
+![](images/heatmap.png)
+
+Its a mix of both positive and negative correlation of features in this dataset.
+
 ## Data Processing
 There are many categorical features in this dataset like job, marital, education, default, housing, loan, contact, month etc...
 
 Used **OrdinalEncoding** for ordinal features like month, day etc ... and **LabelEncoder** for others.
 
-![](images/pair_plot.png)
-
-Here is the pair plot after encoding the dataset.
 
 As per the ask, selected only the first 7 features to see the feature importance of these features.
 
@@ -132,6 +136,15 @@ Here are the plots of the confusion matrix of various models.
 
 All these confusion matrices of various models predict correctly the customers with offers not accepted but wrong predictions on who accepted the offers which means these models are overfitting on training data only.
 
+### LogisticRegression with PCA
+
+Evaluated LogisticRegression by considering all features and used PCA to reduce dimensionality.
+With these techniques this model improved alot and performed at baseline 90% score.
+
+Here is the confusion matrix of predictions on the training set.
+![](images/pca_c_matrix.png)
+
+This plot shows that the model predicted the true positives accurately close to  50% of target classes.
 
 ## Conclusion
 Here are a few interesting observations during the training of these classification models.
