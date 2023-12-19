@@ -154,3 +154,6 @@ The dataset is imbalanced in terms of target classes. So we improve the dataset 
 * **Model Prediction**: All classification models are accurately predicting in terms of offers not accepted but not when customers accepted offers. So due to data imbalance, the models predict wrong for these populations.
 * **Additional Techniques**: Maybe using additional techniques like *ensemble* and/or dataset oversampling will help improve the model.
 * **Additional Classification Models**: Using ensemble classification models like BaggingDecisionTree, RandomForest etc ... might improve the model performance with hyperparameter tuning.
+
+## Author
+* Guduru, Thirupathi Reddy (https://github.com/trguduru)
